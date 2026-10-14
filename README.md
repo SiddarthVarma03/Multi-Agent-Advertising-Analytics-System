@@ -1,4 +1,4 @@
-# Agentic AI Campaign Analytics & Insight Assistant
+# Multi-Agent Advertising Analytics System
 
 ## 🎯 Project Overview
 
@@ -274,41 +274,7 @@ retriever = vectorstore.as_retriever(search_kwargs={"k": 3})
 5. Reporting Agent → creates professional reports
 6. Streamlit UI → displays results to user
 ```
-
 ---
-
-## 🎯 Interview Talking Points
-
-### When explaining the project:
-
-1. **Architecture & Modularity**
-   - "The application uses four specialized agents, each handling specific responsibilities"
-   - "Agents are orchestrated sequentially: Analytics → Retrieval → Recommendation → Reporting"
-   - "This modular approach allows easy testing and maintenance"
-
-2. **LangChain & LCEL**
-   - "We use LangChain Expression Language for elegant chain composition"
-   - "The LCEL pipe operator (`|`) composes components like a Unix pipeline"
-   - "This makes complex workflows readable and maintainable"
-
-3. **RAG Implementation**
-   - "Real RAG with actual vector embeddings (HuggingFace)"
-   - "FAISS provides O(1) similarity search on millions of vectors"
-   - "Retriever fetches context, which is passed to LLM for answer generation"
-
-4. **AI Automation**
-   - "Anomalies are detected automatically using statistical thresholds"
-   - "Gemini LLM generates insights using our structured prompts"
-   - "Entire workflow requires minimal human intervention"
-
-5. **Production Readiness**
-   - "Error handling at every stage"
-   - "Vectorstore persists to disk for consistency"
-   - "API key stored in .env for security"
-   - "Streamlit provides responsive, professional UI"
-
----
-
 ## 🔒 Security Best Practices
 
 - ✅ API keys stored in `.env` (not in code)
@@ -406,12 +372,6 @@ ai-campaign-assistant/
 - [Streamlit Documentation](https://docs.streamlit.io/)
 - [HuggingFace Embeddings](https://huggingface.co/spaces/mteb/leaderboard)
 
----
-
-## 🤝 Contributing
-
-This is a portfolio project. Feel free to fork and extend!
-
 ### Ideas for Extensions:
 - Add more visualization types
 - Implement export to PDF/Excel
@@ -419,39 +379,12 @@ This is a portfolio project. Feel free to fork and extend!
 - Create REST API endpoints
 - Deploy to production environment
 
----
-
-## 📄 License
-
-This project is open source and available for educational and portfolio purposes.
-
----
-
-## 👨‍💻 Author
-
-**Agentic AI Campaign Analytics & Insight Assistant**
-
-Built as a demonstration of:
+### Built as a demonstration of:
 - Production-ready GenAI applications
 - LangChain & LCEL mastery
 - RAG implementation
 - Agentic AI workflows
 - Professional software engineering
 
-**Perfect for:** Technical interviews, portfolio demonstration, and learning modern AI development.
 
----
 
-## ✉️ Support
-
-For questions or issues:
-1. Check the troubleshooting section
-2. Review code comments
-3. Check LangChain documentation
-4. Review agent implementations
-
----
-
-**Last Updated:** May 2026
-
-**Status:** ✅ Production Ready | 🎓 Interview Ready | 📚 Learning Resource
